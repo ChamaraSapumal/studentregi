@@ -1,0 +1,35 @@
+.c-item {
+  height: 600px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* .student-img {
+  height: 50%;
+  position: absolute;
+} */
+
+
+/* Default styles for small to medium screens */
+.student-img {
+  width: 100%;
+  /* Take up the full width of the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  position: relative;
+}
+
+/* Media query for screens above a medium size (adjust the breakpoint as needed) */
+@media (min-width: 768px) {
+  .student-img {
+    height: 50%;
+    /* Take up 50% of the height */
+    width: auto;
+    /* Allow the width to adjust to maintain aspect ratio */
+    position: absolute;
+  }
+}
